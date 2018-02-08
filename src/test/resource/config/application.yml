@@ -1,0 +1,16 @@
+
+
+spring:
+    application:
+        name: AnnotationImageApplication
+    mvc:
+        favicon:
+            enabled: false
+
+server:
+    port: 10344
+    address: localhost
+
+info:
+    project:
+        version: 1.0.0

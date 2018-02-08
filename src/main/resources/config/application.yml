@@ -1,0 +1,32 @@
+
+info:
+    app:
+        name: Annotation Image Application
+        description: StatNLP Service Annotation Image Application
+        version: 1.0.0
+
+logging:
+    level:
+        ROOT: DEBUG
+        com.sutd.statnlp: DEBUG
+
+management:
+    security:
+        enabled: false
+
+spring:
+    application:
+        name:  Annotation Image App
+    devtools:
+        restart:
+            enabled: true
+
+server:
+    port: 8080
+
+
+springfox:
+    documentation:
+        swagger:
+              v2:
+                  path: /api-docs
