@@ -20,9 +20,13 @@ spring:
     devtools:
         restart:
             enabled: true
+    data:
+        mongodb:
+            uri: mongodb://localhost:27017
+            database: AnnotationImage
 
 server:
-    port: 8080
+    port: 8082
 
 
 springfox:
@@ -30,3 +34,16 @@ springfox:
         swagger:
               v2:
                   path: /api-docs
+
+application:
+    async:
+        core-pool-size: 2
+        max-pool-size: 50
+        queue-capacity: 10000
+    mail:
+        from: AnnotationImage@localhost
+    swagger:
+        default-include-pattern: /api/*
+        title: AnnotationImage API
+        description: AnnotationImage API documentation
+        version: 0.0.1
