@@ -43,7 +43,7 @@ application:
     mail:
         from: AnnotationImage@localhost
     swagger:
-        default-include-pattern: /api/*
-        title: AnnotationImage API
-        description: AnnotationImage API documentation
-        version: 0.0.1
+        default-include-pattern: /api/**
+        title: AnnotationImage Service
+        description: Service for AnnotationImage website
+        version: 1.0
